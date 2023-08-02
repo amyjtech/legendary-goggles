@@ -3,42 +3,359 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- BUILD ONLY -->
 		<script src="https://cdn.tailwindcss.com"></script>
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css"
+			rel="stylesheet"
+		/>
+		<!-- CUSTOM FONT -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Yeseva+One&display=swap" rel="stylesheet">
+<link href="resources/css/styles.css" rel="stylesheet">
 	</head>
 	<script>
 		tailwind.config = {
-			theme: {
-				container: {
-					center: true,
-				},
-			},
+			theme: {},
 			plugins: [],
 		};
+
+		console.log("TailWindCSS & FlowBite JS need to donwload");
 	</script>
-	<body>
-		<div class="grid grid-rows-1 grid-flow-col gap-4 justify-center">
-			<!-- Info Card 1 -->
-			<div class="bg-white shadow-lg rounded-lg p-6">
-			  <img class="w-full mb-4 rounded-lg" src="resources/images/flyers/123_1 2.JPG" alt="Image 1">
-			  <h3 class="text-xl font-semibold mb-2">CASA: BOOM THURSDAY</h3>
-			  <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod faucibus
-				felis nec cursus.</p>
-				<p class="text-end">
-					<button
-						class="text-gray-400 font-semibold outline outline-2 outline-gray-600 m-3 p-1"
-						disabled
+	<body class="bg-black">
+		<!-- Container holding all info -->
+		<div
+			class="container mx-auto text-center content-center pb-5 px-2.5 my-2 space-y-4 bg-inherit sm:w-1/2"
+		>
+			<!--  !!MOBILE VERSION!! DJ Name -->
+			<h1
+				label="Home"
+				class="text-4xl tracking-wider font-semibold text-white sm:hidden"
+			>
+				LUGH HAURIE
+			</h1>
+
+			<!-- Header Image -->
+			<div class="container">
+				<img
+					class="w- mx-auto rounded-md"
+					src="resources/images/BlkWht Lugh x The Vault 626.jpg"
+				/>
+			</div>
+			<!-- DJ Name -->
+			<h1
+				label="Home"
+				class="hidden text-5xl tracking-wider font-semibold text-white md:block"
+			>
+				LUGH HAURIE
+			</h1>
+
+			<!-- Social Links -->
+			<div
+				class="grid grid-flow-col auto-cols-max gap-4 justify-center"
+				label="Social"
+				role="group"
+			>
+				<button class="text-zinc-100 text-sm py-1 px-1 rounded-md">
+					<a href="#Shows" class="hover:tracking-wide"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="text-zinc-100 fill-current"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+				</button>
+
+				<button class="text-zinc-100 text-sm py-1 px-1 rounded-md">
+					<a href="#Mixes" class="hover:tracking-wide"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="text-zinc-100 fill-current"><path d="M7 17.939h-1v-8.068c.308-.231.639-.429 1-.566v8.634zm3 0h1v-9.224c-.229.265-.443.548-.621.857l-.379-.184v8.551zm-2 0h1v-8.848c-.508-.079-.623-.05-1-.01v8.858zm-4 0h1v-7.02c-.312.458-.555.971-.692 1.535l-.308-.182v5.667zm-3-5.25c-.606.547-1 1.354-1 2.268 0 .914.394 1.721 1 2.268v-4.536zm18.879-.671c-.204-2.837-2.404-5.079-5.117-5.079-1.022 0-1.964.328-2.762.877v10.123h9.089c1.607 0 2.911-1.393 2.911-3.106 0-2.233-2.168-3.772-4.121-2.815zm-16.879-.027c-.302-.024-.526-.03-1 .122v5.689c.446.143.636.138 1 .138v-5.949z"/></svg></a>
+				</button>
+
+				<button class="text-zinc-100 text-sm py-1 px-1 rounded-md">
+					<a href="#Bio" class="hover:tracking-wide"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="text-zinc-100 fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg></a>
+				</button>
+			</div>
+			<!-- NavBar/Links -->
+			<div
+				class="grid grid-flow-col auto-cols-max gap-4 justify-center"
+				label="NavBar"
+				role="group"
+			>
+				<button class="text-zinc-100 py-1 px-1 rounded-md">
+					<a href="#Shows" class="hover:tracking-wide">Shows</a>
+				</button>
+
+				<button class="text-zinc-100 py-1 px-1 rounded-md">
+					<a href="#Mixes" class="hover:tracking-wide">Mixes</a>
+				</button>
+
+				<button class="text-zinc-100 py-1 px-1 rounded-md">
+					<a href="#Bio" class="hover:tracking-wide">Bio</a>
+				</button>
+
+				<button class="text-zinc-100 py-1 px-1 rounded-md">
+					<a href="#Gallery" class="hover:tracking-wide">Gallery</a>
+				</button>
+			</div>
+
+			<!-- Upcoming Shows -->
+			<div class="container">
+				<h2
+					label="Shows"
+					class="text-xl text-zinc-100 tracking-wide p-2 font-semibold"
+				>
+					SHOWS
+				</h2>
+				<div
+					class="grid grid-rows-1 grid-flow-col gap-4 justify-center bg-black"
+				>
+					<!-- Show Card 1 -->
+					<div class="container bg-inherit rounded-md col-span-2 p-1">
+						<h3
+							label="ShowName"
+							class="text-zinc-100 text-m text-start font-semibold"
+						>
+							CASA: BOOM THURSDAY
+						</h3>
+						<img
+							src="resources/images/flyers/123_1.JPG"
+							class="mx-auto aspect-auto p-1 rounded-md"
+						/>
+						<p class="text-left text-zinc-100 p-1">
+							<strong>Jul 27 —</strong> Lorem ipsum dolor sit amet, consectetur
+							adipiscing elit.
+						</p>
+						<p class="text-end">
+							<button
+								class="text-gray-400 font-semibold outline outline-2 outline-gray-600 m-3 p-1"
+								disabled
+							>
+								FREE SHOW
+							</button>
+						</p>
+					</div>
+					<!-- Show Card 3 -->
+					<div class="container bg-zinc-800 rounded-md col-span-2 p-1 hidden">
+						<h3
+							label="ShowName"
+							class="text-zinc-100 text-m text-start font-semibold"
+						>
+							SHOW NAME
+						</h3>
+						<img
+							src="resources/images/2000x2000.png"
+							class="mx-auto aspect-auto w-20 rounded-sm sm:w-44 sm:h-44"
+						/>
+						<p class="text-left text-zinc-100 p-1">
+							<strong>MMM DD —</strong> Lorem ipsum dolor sit amet, consectetur
+							adipiscing elit.
+						</p>
+						<p class="text-end">
+							<button
+								class="text-zinc-100 font-semibold outline outline-2 outline-zinc-100 m-3 p-1"
+							>
+								BUY TICKETS
+							</button>
+						</p>
+					</div>
+					<!-- Show Card 2 -->
+					<div class="container bg-black rounded-md col-span-2 p-1">
+						<h3
+							label="ShowName"
+							class="text-zinc-100 text-m text-start font-semibold"
+						>
+							RESYNC<br />
+						</h3>
+						<img
+							src="resources/images/flyers/123_1 2.JPG"
+							class="mx-auto aspect-auto p-1 rounded-md"
+						/>
+						<p class="text-left text-zinc-100 p-1">
+							<strong>Aug 20 —</strong> Lorem ipsum dolor sit amet, consectetur
+							adipiscing elit.
+						</p>
+						<p class="text-end">
+							<button
+								class="text-zinc-100 font-semibold outline outline-2 outline-zinc-100 hover:bg-gray-800 m-3 p-1"
+							>
+								BUY TICKETS
+							</button>
+						</p>
+					</div>
+					<!-- Show Card 4 -->
+					<div class="container bg-zinc-800 rounded-md col-span-2 p-1 hidden">
+						<h3
+							label="ShowName"
+							class="text-zinc-100 text-m text-start font-semibold"
+						>
+							SHOW NAME
+						</h3>
+						<a href="#" target="_blank"
+							><img
+								src="resources/images/2000x2000.png"
+								class="mx-auto aspect-auto w-20 hover:blur-sm rounded-sm sm:w-44 sm:h-44"
+						/></a>
+						<p class="text-left text-zinc-100 p-1">
+							<strong>MMM DD —</strong> Lorem ipsum dolor sit amet, consectetur
+							adipiscing elit.
+						</p>
+						<p class="text-end">
+							<button
+								class="text-zinc-100 font-semibold outline outline-2 outline-zinc-100 m-3 p-1"
+							>
+								BUY TICKETS
+							</button>
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- DJ Mixes -->
+			<div class="container bg-amber-100">
+				<h2 label="Mix" class="text-xl tracking-wide p-2 font-semibold">MIXES</h2>
+			</div>
+
+			<!-- Bio -->
+			<div class="container">
+				<h2
+					label="Bio"
+					class="text-zinc-100 text-xl tracking-wide p-2 font-semibold"
+				>
+					BIO
+				</h2>
+				<p class="text-left text-zinc-100 p-3">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+					minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+					aliquip ex ea commodo consequat. Duis aute irure dolor in
+					reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+					pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+					culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</div>
+
+			<!-- Gallery -->
+			<div class="container p-3">
+				<h2 label="Gallery" class="text-xl text-zinc-100 tracking-wide p-2 font-semibold">
+					GALLERY
+				</h2>
+				<div class="container bg-slate-500">
+					<div
+						id="default-carousel"
+						class="relative w-full"
+						data-carousel="slide"
 					>
-						FREE SHOW
-					</button>
-			</div>
-		
-			<!-- Info Card 2 -->
-			<div class="bg-white shadow-lg rounded-lg p-6">
-			  <img class="w-full mb-4 rounded-lg" src="resources/images/flyers/123_1.JPG" alt="Image 2">
-			  <h3 class="text-xl font-semibold mb-2">RESYNC</h3>
-			  <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod faucibus
-				felis nec cursus.</p>
-			  <button class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Purchase</button>
-			</div>
+						<!-- Carousel wrapper -->
+						<div class="relative h-56 overflow-hidden md:h-96">
+							<!-- Item 1 -->
+							<div class="hidden duration-700 ease-in-out" data-carousel-item>
+								<img
+									src="resources/images/flyers/123_1 2.JPG"
+									class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+									alt="..."
+								/>
+							</div>
+							<!-- Item 2 -->
+							<div class="hidden duration-700 ease-in-out" data-carousel-item>
+								<img
+									src="resources/images/flyers/123_1.JPG"
+									class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+									alt="..."
+								/>
+							</div>
+							<!-- Item 3 -->
+							<div class="hidden duration-700 ease-in-out" data-carousel-item>
+								<img
+									src="resources/images/logowht-nobackground-1000.png"
+									class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+									alt="..."
+								/>
+							</div>
+						</div>
+						<!-- Slider indicators -->
+						<div
+							class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2"
+						>
+							<button
+								type="button"
+								class="w-3 h-3 rounded-full"
+								aria-current="true"
+								aria-label="Slide 1"
+								data-carousel-slide-to="0"
+							></button>
+							<button
+								type="button"
+								class="w-3 h-3 rounded-full"
+								aria-current="false"
+								aria-label="Slide 2"
+								data-carousel-slide-to="1"
+							></button>
+							<button
+								type="button"
+								class="w-3 h-3 rounded-full"
+								aria-current="false"
+								aria-label="Slide 3"
+								data-carousel-slide-to="2"
+							></button>
+						</div>
+						<!-- Slider controls -->
+						<button
+							type="button"
+							class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+							data-carousel-prev
+						>
+							<span
+								class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+							>
+								<svg
+									class="w-4 h-4 text-white dark:text-gray-800"
+									aria-hidden="true"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 6 10"
+								>
+									<path
+										stroke="currentColor"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M5 1 1 5l4 4"
+									/>
+								</svg>
+								<span class="sr-only">Previous</span>
+							</span>
+						</button>
+						<button
+							type="button"
+							class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+							data-carousel-next
+						>
+							<span
+								class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+							>
+								<svg
+									class="w-4 h-4 text-white dark:text-gray-800"
+									aria-hidden="true"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 6 10"
+								>
+									<path
+										stroke="currentColor"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="m1 9 4-4-4-4"
+									/>
+								</svg>
+								<span class="sr-only">Next</span>
+							</span>
+						</button>
+					</div>
+				</div>
+		</div>
+
+		<!-- NewsLetter -->
+		<div class="container bg-teal-200">
+			<h2 label="Newsletter" class="text-xl tracking-wide p-2 font-semibold">
+				NEWSLETTER
+			</h2>
+		</div>
+
+		<!-- BUILD ONLY -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
 	</body>
 </html>
